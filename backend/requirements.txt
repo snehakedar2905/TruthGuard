@@ -1,0 +1,30 @@
+# ==========================================================
+# TruthGuard: Production Dependencies
+# ==========================================================
+
+# Core Web Framework & Server
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+python-dotenv>=1.0.0
+httpx>=0.27.0
+python-multipart>=0.0.9
+
+# Database & Storage
+sqlalchemy>=2.0.25
+# psycopg2-binary or asyncpg can be installed when PostgreSQL is used
+# pgvector can be installed for vector extensions in PostgreSQL
+
+# Scientific & NLP Processing
+numpy>=1.26.0
+scikit-learn>=1.4.0
+
+# Optional ML models (graceful fallback in Mock/Heuristic mode)
+sentence-transformers>=3.0.0; extra == "ml"
+transformers>=4.40.0; extra == "ml"
+torch>=2.2.0; extra == "ml"
+
+# Testing & Quality
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

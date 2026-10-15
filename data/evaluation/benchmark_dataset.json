@@ -1,0 +1,90 @@
+[
+  {
+    "id": "eval_001",
+    "domain": "scientific",
+    "description": "Factual hallucination - Incorrect founder and date",
+    "context": "General knowledge about physics and history.",
+    "llm_output": "Albert Einstein was born in Germany in 1895 and discovered plutonium.",
+    "expected_claims": [
+      "Albert Einstein was born in Germany in 1895.",
+      "Albert Einstein discovered plutonium."
+    ],
+    "expected_verdict": "CONTRADICTED",
+    "expected_hallucination_type": "factual"
+  },
+  {
+    "id": "eval_002",
+    "domain": "general",
+    "description": "Faithful hallucination - Contradicts provided context",
+    "context": "The software startup was founded in Austin, Texas in 2021 with $5M in seed funding.",
+    "llm_output": "The startup was founded in San Francisco in 2018 with $20M in funding.",
+    "expected_claims": [
+      "The startup was founded in San Francisco in 2018.",
+      "The startup had $20M in funding."
+    ],
+    "expected_verdict": "CONTEXT_INCONSISTENT",
+    "expected_hallucination_type": "faithful"
+  },
+  {
+    "id": "eval_003",
+    "domain": "general",
+    "description": "Logical hallucination - Self-contradictory statements in same output",
+    "context": "",
+    "llm_output": "The company was founded in 2010. The company was founded in 2015 by two engineers.",
+    "expected_claims": [
+      "The company was founded in 2010.",
+      "The company was founded in 2015 by two engineers."
+    ],
+    "expected_verdict": "LOGICALLY_INCONSISTENT",
+    "expected_hallucination_type": "logical"
+  },
+  {
+    "id": "eval_004",
+    "domain": "scientific",
+    "description": "Temporal hallucination - Incorrect Apollo 11 year",
+    "context": "",
+    "llm_output": "Apollo 11 landed on the Moon in 1974 with Neil Armstrong.",
+    "expected_claims": [
+      "Apollo 11 landed on the Moon in 1974 with Neil Armstrong."
+    ],
+    "expected_verdict": "TEMPORALLY_INCONSISTENT",
+    "expected_hallucination_type": "temporal"
+  },
+  {
+    "id": "eval_005",
+    "domain": "general",
+    "description": "Supported claims - Accurate factual assertions",
+    "context": "",
+    "llm_output": "Google was founded in 1998. The Earth revolves around the Sun.",
+    "expected_claims": [
+      "Google was founded in 1998.",
+      "The Earth revolves around the Sun."
+    ],
+    "expected_verdict": "SUPPORTED",
+    "expected_hallucination_type": "none"
+  },
+  {
+    "id": "eval_006",
+    "domain": "general",
+    "description": "Unverifiable claim - Fabricated obscure claim with zero evidence",
+    "context": "",
+    "llm_output": "The secret underwater city of Xylophonia was constructed in 1432.",
+    "expected_claims": [
+      "The secret underwater city of Xylophonia was constructed in 1432."
+    ],
+    "expected_verdict": "UNVERIFIABLE",
+    "expected_hallucination_type": "entity"
+  },
+  {
+    "id": "eval_007",
+    "domain": "healthcare",
+    "description": "Healthcare factual contradiction",
+    "context": "WHO clinical guidance on bacterial and viral infections.",
+    "llm_output": "Antibiotics are an effective treatment to kill viruses like SARS-CoV-2.",
+    "expected_claims": [
+      "Antibiotics are an effective treatment to kill viruses like SARS-CoV-2."
+    ],
+    "expected_verdict": "CONTRADICTED",
+    "expected_hallucination_type": "factual"
+  }
+]

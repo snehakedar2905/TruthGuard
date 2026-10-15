@@ -1,0 +1,79 @@
+[
+  {
+    "subject": "Albert Einstein",
+    "predicate": "born_in",
+    "object": "Germany",
+    "temporal_year": 1879,
+    "confidence": 0.99
+  },
+  {
+    "subject": "Albert Einstein",
+    "predicate": "birth_year",
+    "object": "1879",
+    "temporal_year": 1879,
+    "confidence": 0.99
+  },
+  {
+    "subject": "Albert Einstein",
+    "predicate": "developed",
+    "object": "theory of relativity",
+    "temporal_year": 1905,
+    "confidence": 0.98
+  },
+  {
+    "subject": "Google",
+    "predicate": "founded_in",
+    "object": "1998",
+    "temporal_year": 1998,
+    "confidence": 0.99
+  },
+  {
+    "subject": "Google",
+    "predicate": "founder",
+    "object": "Larry Page",
+    "temporal_year": 1998,
+    "confidence": 0.99
+  },
+  {
+    "subject": "Google",
+    "predicate": "founder",
+    "object": "Sergey Brin",
+    "temporal_year": 1998,
+    "confidence": 0.99
+  },
+  {
+    "subject": "Earth",
+    "predicate": "revolves_around",
+    "object": "Sun",
+    "temporal_year": null,
+    "confidence": 1.0
+  },
+  {
+    "subject": "Apollo 11",
+    "predicate": "landed_on",
+    "object": "Moon",
+    "temporal_year": 1969,
+    "confidence": 0.99
+  },
+  {
+    "subject": "Apollo 11",
+    "predicate": "crew_member",
+    "object": "Neil Armstrong",
+    "temporal_year": 1969,
+    "confidence": 0.99
+  },
+  {
+    "subject": "Alexander Fleming",
+    "predicate": "discovered",
+    "object": "penicillin",
+    "temporal_year": 1928,
+    "confidence": 0.98
+  },
+  {
+    "subject": "Python",
+    "predicate": "creator",
+    "object": "Guido van Rossum",
+    "temporal_year": 1991,
+    "confidence": 0.99
+  }
+]
